@@ -4,4 +4,43 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  background-color: #fafafa;
+  color: #a3a5ae;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+header {
+  color: #4c4e61;
+  margin: 50px 0 30px 0;
+  text-align: center;
+}
+
+header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+header span {
+  font-weight: 600;
+}
+
+header p {
+  color: #a3a5ae;
+}
 /*# sourceMappingURL=style.css.map */
