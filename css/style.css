@@ -13,10 +13,13 @@ body {
 }
 
 main .card {
-  border: 1px solid black;
-  border-radius: 10px;
+  border-top: 3px solid black;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 20px #a3a5ae;
+          box-shadow: 0 10px 20px #a3a5ae;
   padding: 20px;
   background-color: white;
+  margin-bottom: 30px;
 }
 
 main .card h3 {
@@ -26,7 +29,7 @@ main .card h3 {
 
 main .card p {
   font-size: 0.8rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 main .card .card-icon {
@@ -38,6 +41,15 @@ main .card .card-icon {
           justify-content: flex-end;
 }
 
+footer {
+  font-size: 0.8rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4c4e61;
+}
+
 .container {
   width: 85%;
   margin: auto;
@@ -45,7 +57,7 @@ main .card .card-icon {
 
 header {
   color: #4c4e61;
-  margin: 50px 0 30px 0;
+  margin: 50px 0 50px 0;
   text-align: center;
 }
 
@@ -68,5 +80,21 @@ header span {
 
 header p {
   color: #a3a5ae;
+}
+
+main .card-supervisor {
+  border-top: 3px solid #45d3d3;
+}
+
+main .card-teambuilder {
+  border-top: 3px solid #ea5353;
+}
+
+main .card-karma {
+  border-top: 3px solid #fcaf4a;
+}
+
+main .card-calculator {
+  border-top: 3px solid #549ef2;
 }
 /*# sourceMappingURL=style.css.map */

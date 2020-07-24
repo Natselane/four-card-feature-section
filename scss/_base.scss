@@ -24,10 +24,12 @@ body {
 }
 
 main .card {
-    border: 1px solid black;
-    border-radius: 10px;
+    border-top: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px $font-color;
     padding: 20px;
     background-color: white;
+    margin-bottom: 30px;
 
     h3 {
         color: $font-color-dark;
@@ -36,11 +38,20 @@ main .card {
 
     p {
         font-size: 0.8rem;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .card-icon {
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+footer {
+    font-size: 0.8rem;
+
+    a {
+        text-decoration: none;
+        color: $font-color-dark;
     }
 }
