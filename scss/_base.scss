@@ -22,3 +22,25 @@ body {
     background-color: $background;
     color: $font-color;
 }
+
+main .card {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+
+    h3 {
+        color: $font-color-dark;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .card-icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
