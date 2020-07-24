@@ -138,11 +138,14 @@ main .card-calculator {
 }
 
 @media only screen and (min-width: 769px) {
+  .container {
+    width: 100%;
+  }
   main {
     display: -ms-grid;
     display: grid;
     gap: 30px;
-    width: 75%;
+    width: 95%;
     margin: auto;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -152,12 +155,18 @@ main .card-calculator {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+    justify-items: center;
+  }
+  main .card {
+    min-width: 200px;
   }
   main .card-supervisor {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: supervisor;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
   main .card-teambuilder {
     -ms-grid-row: 1;
@@ -176,6 +185,18 @@ main .card-calculator {
     -ms-grid-row-span: 2;
     -ms-grid-column: 3;
     grid-area: calculator;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  main {
+    width: 70%;
+    gap: 15px;
+  }
+  main .card {
+    max-width: 350px;
   }
 }
 /*# sourceMappingURL=style.css.map */

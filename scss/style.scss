@@ -64,10 +64,13 @@ main {
 
 // Laptops
 @media only screen and (min-width: 769px) {
+    .container {
+        width: 100%;
+    }
     main {
         display: grid;
         gap: 30px;
-        width: 75%;
+        width: 95%;
         margin: auto;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -77,11 +80,15 @@ main {
             "supervisor karma calculator"
             ". karma .";
         align-items: stretch;
+        justify-items: center;
 
+        .card {
+            min-width: 200px;
+        }
 
         .card-supervisor {
             grid-area: supervisor;
-            
+            justify-self: end;
         }
 
         .card-teambuilder {
@@ -94,11 +101,18 @@ main {
 
         .card-calculator {
             grid-area: calculator;
+            justify-self: start;
         }
     }
 }
 
 // Desktops
 @media only screen and (min-width: 1025px) {
-
+    main {
+        width: 70%;
+        gap: 15px;
+        .card {
+            max-width: 350px;
+        }
+    }
 }
