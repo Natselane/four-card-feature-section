@@ -10,6 +10,25 @@ body {
   font-size: 15px;
   background-color: #fafafa;
   color: #a3a5ae;
+  height: 90%;
+  padding: 50px 0;
+}
+
+html {
+  height: 100vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .card {
@@ -20,6 +39,7 @@ main .card {
   padding: 20px;
   background-color: white;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 main .card h3 {
@@ -43,6 +63,8 @@ main .card .card-icon {
 
 footer {
   font-size: 0.8rem;
+  margin: 50px 0 20px 0;
+  text-align: center;
 }
 
 footer a {
@@ -56,8 +78,18 @@ footer a {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #4c4e61;
-  margin: 50px 0 50px 0;
+  margin: 0 0 50px 0;
   text-align: center;
 }
 
@@ -80,6 +112,7 @@ header span {
 
 header p {
   color: #a3a5ae;
+  max-width: 500px;
 }
 
 main .card-supervisor {
@@ -96,5 +129,53 @@ main .card-karma {
 
 main .card-calculator {
   border-top: 3px solid #549ef2;
+}
+
+@media only screen and (min-width: 481px) {
+  .card {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    gap: 30px;
+    width: 75%;
+    margin: auto;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: ". team-builder ." "supervisor team-builder calculator" "supervisor karma calculator" ". karma .";
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  main .card-supervisor {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: supervisor;
+  }
+  main .card-teambuilder {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: team-builder;
+  }
+  main .card-karma {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: karma;
+  }
+  main .card-calculator {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: calculator;
+  }
 }
 /*# sourceMappingURL=style.css.map */

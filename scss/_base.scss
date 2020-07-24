@@ -21,6 +21,19 @@ body {
     font-size: $main-font-size;
     background-color: $background;
     color: $font-color;
+    height: 90%;
+    padding: 50px 0;
+    
+}
+
+html {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .card {
@@ -30,6 +43,7 @@ main .card {
     padding: 20px;
     background-color: white;
     margin-bottom: 30px;
+    width: 100%;
 
     h3 {
         color: $font-color-dark;
@@ -54,4 +68,7 @@ footer {
         text-decoration: none;
         color: $font-color-dark;
     }
+
+    margin: 50px 0 20px 0;
+    text-align: center;
 }
